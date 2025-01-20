@@ -19,4 +19,11 @@ const canvasCreator =() => {
         context.lineTo(toX,toY);
         context.stroke();
     };
+
+    const head = () => {
+        context.beginPath();
+        context.arc(70, 30, 10, 0, Math.PI * 2, true);
+        context.stroke();
+    };
+    
 }
