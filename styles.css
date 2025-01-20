@@ -1,14 +1,10 @@
 
-// Link in index.html
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
 
 body {
     background-color: lightskyblue;
 }
 
-// Example font
+
 .roboto-<default-font> {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
