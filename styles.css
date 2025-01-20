@@ -2,17 +2,8 @@
 
 body {
     background-color: lightskyblue;
+    font-family: 'Roboto', sans-serif;
 }
-
-
-.roboto-<default-font> {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
 
 .gamecontainer {
     background-color: white;
