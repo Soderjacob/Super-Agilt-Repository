@@ -1,0 +1,33 @@
+
+// Link in index.html
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+body {
+    background-color: lightskyblue;
+}
+
+// Example font
+.roboto-<default-font> {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.gamecontainer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 10px;
+}
+
