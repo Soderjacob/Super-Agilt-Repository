@@ -45,4 +45,19 @@ const canvasCreator =() => {
     const rightLeg = () => {
         drawLine(70, 80, 90, 110);
     };
+
+//initial frame
+const initialDrawing = () => {
+//clear canvas
+context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+//bottom line
+drawLine(10, 130, 130, 130);
+//left line
+drawLine(10, 10, 10, 131);
+//top line
+drawLine(10, 10, 70, 10);
+//small top line
+drawLine(70, 10, 70, 20);
+};
+
 }
