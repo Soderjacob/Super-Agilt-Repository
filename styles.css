@@ -4,8 +4,21 @@ body {
     background-color: lightskyblue;
 }
 
+.button{
+    transition-duration: 0.5s;
+    background-color: rgb(161, 218, 238);
+    padding: 20px;
+}
+.button:hover{
+    background-color: rgb(125, 190, 213);
+}
+.button:active{
+    background-color:rgb(38, 81, 97);
+}
 
-.roboto-<default-font> {
+
+
+.roboto-default-font {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -15,7 +28,7 @@ body {
   }
 
 .gamecontainer {
-    background-color: white;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
