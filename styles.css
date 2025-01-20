@@ -55,7 +55,7 @@ body {
 }
 
 #options-container button.active {
-background-color: #8c52ff;
+background-color: lightskyblue;
 border: 3px solid #000000;
 color: #fff;
 }
@@ -100,7 +100,7 @@ color: #fff;
 canvas {
 display: block;
 margin: auto;
-border: 10px solid #8c52ff;
+border: 10px solid lightskyblue;
 border-radius: 10px;
 }
 
@@ -125,7 +125,7 @@ font-weight: 600;
 #new-game-button {
 font-size: 1.25em;
 padding: 0.5em 1em;
-background-color: #8c52ff;
+background-color: lightskyblue;
 border: 3px solid #000000;
 color: #fff;
 border-radius: 0.2em;
