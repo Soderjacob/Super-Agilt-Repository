@@ -20,6 +20,14 @@ myButton.addEventListener("click", event =>{
 
 
 //Canvas This code will be under the buttons...
+
+displayOptions();
+//Call to canvasCreator (clear previous and creating initial)
+let { initialDrawing } = canvasCreator();
+//initialDrawing will draw the frame
+initialDrawing();
+// }; Remove comment and keep end curlybraces when buttons are responsive
+
 const canvasCreator =() => {
     let context = canvas.getContent("2d");
     context.beginPath();
