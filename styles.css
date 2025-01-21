@@ -22,18 +22,7 @@ body {
     background-color:rgb(38, 81, 97);
 }
 
-
-
-.roboto-default-font {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-.gamecontainer {
+.gamecontainer {}
     
 
 .c1 {
