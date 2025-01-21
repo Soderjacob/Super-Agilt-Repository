@@ -1,5 +1,9 @@
 import { readFile } from 'fs';
 
+// code for reading from text file and convert to array
+// and select randomly two names from array and print 
+// them with there length.
+
 readFile('counterisNames.txt', 'utf8', (err, data) => {
   if (err) {
     console.error('Error reading the file: ' + err);
