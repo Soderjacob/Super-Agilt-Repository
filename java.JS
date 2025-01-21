@@ -1,4 +1,27 @@
 const canvas = document.getElementById("canvas")
+
+const newGameButton = document.getElementById('new-game-button');
+const exitButton = document.getElementById('exit-button');
+const word1 = document.getElementById('Word1');
+const word2 = document.getElementById('Word2');
+
+//check if buttons work
+
+newGameButton.addEventListener('click',function(){
+    alert('You want to start a new game!');
+});
+exitButton.addEventListener('click',function(){
+    alert('You want to exit game!');
+});
+
+word1.addEventListener('click',function(){
+    alert('you chose word1');
+});
+word2.addEventListener('click',function(){
+    alert('you chose word2');
+});
+
+//
 const myButton = document.getElementById("myButton")
 const p1 = document.getElementById("p1")
 const p2 = document.getElementById("p2")
@@ -19,8 +42,11 @@ myButton.addEventListener("click", event =>{
 
 
 
-//Canvas This code will be under the buttons...
 
+
+
+
+//Canvas This code will be under the buttons...
 displayOptions();
 //Call to canvasCreator (clear previous and creating initial)
 let { initialDrawing } = canvasCreator();

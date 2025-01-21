@@ -6,16 +6,27 @@
     <title>Hangman</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="java.JS"></script>
+    
 </head>
 
 <body>
+    
     <div> <h1>The Hangman game</h1></div>
+        <nav class="button-container">
+            <button class="button" id="new-game-button">New Game</button> 
+            <button class="button" id="exit-button">Exit Game</button>
+        </nav>
+
         <div class = "c1">
-            <div id="options-container">
-                <button class="button" id="Word 1">Word 1</button>
-                <button class="button" id="Word 2"> Word 2</button>
+
+            <div class="gamecontainer">
+                
             </div>
+            <div id="options-container">
+                <button class="button" id="Word1">Word 1</button>
+                <button class="button" id="Word2"> Word 2</button>
+            </div>
+
             <div id="letter-container" class ="letter-container hide"></div>
             <div id="user-input-section"></div>
             <canvas id="canvas"></canvas> <!--Canvas for the man-->
@@ -45,13 +56,8 @@
 
          <!-- <button class="Button" id="Confirm-button">Confirm</button> t.ex confirm chosen word -->
         <!--
-         <div class="gamecontainer">
-            <nav class="button-container">
-                <button class="button" id="new-game-button">New Game</button> 
-                <button class="button" id="exit-button">Exit Game</button>
-            </nav>
-        </div>
+         
         -->
-
+        <script src="java.JS"></script>
 </body>
 </html>

@@ -11,9 +11,13 @@ body {
 
 
 .button{
-    transition-duration: 0.5s;
-    background-color: rgb(161, 218, 238);
-    padding: 20px;
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: lightskyblue;
+    border: 3px solid #000000;
+    color: #fff;
+    border-radius: 0.2em;
+    cursor: pointer;
 }
 .button:hover{
     background-color: rgb(125, 190, 213);
@@ -144,15 +148,7 @@ margin: 1em 0 2em 0;
 font-weight: 600;
 }
 
-#new-game-button {
-font-size: 1.25em;
-padding: 0.5em 1em;
-background-color: lightskyblue;
-border: 3px solid #000000;
-color: #fff;
-border-radius: 0.2em;
-cursor: pointer;
-}
+
 
 .win-msg {
 color: #39d78d;
@@ -167,7 +163,7 @@ color: #fe5152;
     padding: 10px;
 }
 
-}
+
 .playerturn {
     
 }
