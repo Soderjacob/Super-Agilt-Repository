@@ -11,12 +11,17 @@
 <body>
     <div> <h1>The Hangman game</h1></div>
         <div class = "c1">
-            <div id="options-container"></div>
+            <div id="options-container">
+                <button class="button" id="Word 1">Word 1</button>
+                <button class="button" id="Word 2"> Word 2</button>
+            </div>
             <div id="letter-container" class ="letter-container hide"></div>
             <div id="user-input-section"></div>
-            <div id="new-game-container" class = "new-game-popup hide"></div>
-            <div id ="results-text"></div>
-
+            <div id="new-game-container" class = "new-game-popup hide">
+                <div id ="results-text"></div>
+                <button class="button" id="new-game-button">New Game</button> 
+                <button class="button" id="exit-button">Exit Game</button>
+            </div>
         </div>
 
         <div class = "c2">
@@ -28,13 +33,14 @@
         </div>
 
          <!-- <button class="Button" id="Confirm-button">Confirm</button> t.ex confirm chosen word -->
-        <div class="gamecontainer">
-            <button class="button" id="new-game-button">New Game</button> 
-            <button class="button" id="exit-button">Exit Game</button>
+        <!--
+         <div class="gamecontainer">
+            <nav class="button-container">
+                <button class="button" id="new-game-button">New Game</button> 
+                <button class="button" id="exit-button">Exit Game</button>
+            </nav>
         </div>
-
-        <button class="button" id="Word 1">Word 1</button>
-        <button class="button" id="Word 2"> Word 2</button>
+        -->
 
 </body>
 </html>
