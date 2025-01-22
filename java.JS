@@ -14,17 +14,12 @@ myButton.addEventListener("click", event =>{
     }
 })
 
+let winCount = 0;
+let count = 0;
 
+let chosenWord = "";
 
 //Canvas This code will be under the buttons...
-
-displayOptions();
-//Call to canvasCreator (clear previous and creating initial)
-let { initialDrawing } = canvasCreator();
-//initialDrawing will draw the frame
-initialDrawing();
-// }; Remove comment and keep end curlybraces when buttons are responsive
-
 const canvasCreator =() => {
     let context = canvas.getContent("2d");
     context.beginPath();
@@ -107,3 +102,5 @@ const drawMan = (count) => {
             break;
     }
 };
+newGameButton.addEventListener("click",initalizer);
+window.onload = initalizer;
