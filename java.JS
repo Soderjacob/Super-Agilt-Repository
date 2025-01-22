@@ -184,5 +184,5 @@ const drawMan = (count) => {
             break;
     }
 };
-newGameButton.addEventListener("click",initalizer);
-window.onload = initalizer;
+newGameButton.addEventListener("click",initializer);
+window.onload = initializer;
