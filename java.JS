@@ -4,6 +4,15 @@ const newGameButton = document.getElementById('new-game-button');
 const exitButton = document.getElementById('exit-button');
 const word1 = document.getElementById('Word1');
 const word2 = document.getElementById('Word2');
+const confirmButton = document.getElementById('confirm-button');
+//const input = document.getElementById('input');
+
+//input
+
+function displayValue(){
+    const inputValue = document.getElementById("input").value;
+    document.getElementById("output").innerText=inputValue;
+}
 
 //check if buttons work
 
@@ -34,16 +43,6 @@ myButton.addEventListener("click", event =>{
        p2.style.display = "none";
     }
 })
-
-
-
-
-
-
-
-
-
-
 
 
 //Canvas This code will be under the buttons...
