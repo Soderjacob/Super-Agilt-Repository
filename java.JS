@@ -4,9 +4,10 @@ const userInputSection = document.getElementById("user-input-section");
 const newGameContainer = document.getElementById("new-game-container");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
-const myButton = document.getElementById("myButton")
-const p1 = document.getElementById("p1")
-const p2 = document.getElementById("p2")
+const myButton = document.getElementById("myButton");
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
+const newGameButton = document.getElementById("new-game-button");
 
 
 
