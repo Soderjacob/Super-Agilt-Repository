@@ -3,15 +3,21 @@ const myButton = document.getElementById("myButton")
 const p1 = document.getElementById("p1")
 const p2 = document.getElementById("p2")
 
-myButton.addEventListener("click", () => {
-    if(p1.style.display === "none") {
-        p1.style.display = "block";
-    } else {
-        p2.style.display = "none";
+myButton.addEventListener("click", event =>{
+    if(p1.style.display === "none"){
+      p1.style.display = "block";
     }
-});
+    else{
+       p1.style.display = "none";
+    }
+    
+})
 
 
+let winCount = 0;
+let count = 0;
+
+let chosenWord = "";
 
 
 
@@ -101,3 +107,5 @@ const drawMan = (count) => {
             break;
     }
 };
+newGameButton.addEventListener("click",initalizer);
+window.onload = initalizer;
