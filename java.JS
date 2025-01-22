@@ -4,14 +4,22 @@ const p1 = document.getElementById("p1")
 const p2 = document.getElementById("p2")
 
 myButton.addEventListener("click", event =>{
+    while(true){
     if(p1.style.display === "none"){
       p1.style.display = "block";
+      p2.style.display = "none";
+     
     }
-    else{
+    else {
        p1.style.display = "none";
+        p2.style.display = "block";
     }
-    
+    break;
+}
+
 })
+
+
 
 
 let winCount = 0;
