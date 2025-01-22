@@ -1,3 +1,7 @@
+const letterContainer = document.getElementById("letter-container");
+const optionsContainer = document.getElementById("options-container");
+const userInputSection = document.getElementById("user-input-section");
+const newGameContainer = document.getElementById("new-game-container");
 const canvas = document.getElementById("canvas")
 const myButton = document.getElementById("myButton")
 const p1 = document.getElementById("p1")
@@ -16,7 +20,18 @@ myButton.addEventListener("click", event =>{
 
 
 
+//initial function (called when page loads or user press new game)
+const initializer = () => {
+    winCount = 0;
+    count = 0;
 
+    //Initially erase all content and hide letters and new game button
+    userInputSection.innerHTML = "";
+    optionsContainer.innerHTML = "";
+    letterContainer.classList.add("hide");
+    newGameContainer.classList.add("hide");
+    letterContainer.innerHTML = "";
+}
 
 
 //Canvas This code will be under the buttons...
