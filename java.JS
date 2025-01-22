@@ -3,6 +3,8 @@ const myButton = document.getElementById("myButton")
 const p1 = document.getElementById("p1")
 const p2 = document.getElementById("p2")
 
+
+
 myButton.addEventListener("click", event =>{
     if(p1.style.display === "none"){
       p1.style.display = "block";
@@ -11,11 +13,6 @@ myButton.addEventListener("click", event =>{
        p2.style.display = "none";
     }
 })
-
-
-
-
-
 
 
 
