@@ -48,20 +48,32 @@ body {
     padding: 3em;
     border-radius: 0.6em;
     box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 #options-container  {
     display: flex;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 7em;
+    gap: 1em;
 }
 
 #options-container div  {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 1.2em 0 2.4em 0;
+    justify-content: center;
+    /*margin: 1.2em 0 2.4em 0;*/
+    gap: 3em;
+}
+
+.buttons-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #options-container button {
@@ -165,5 +177,20 @@ color: #fe5152;
 
 
 .playerturn {
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+#myButton{
+    flex-shrink: 1; /* Förhindrar att knappen expanderar */
+    align-self: center; /* Justerar knappen i mitten av flexbehållaren */
+    padding: 10px 20px; /* Justerar inre utrymmen */
+    background-color: lightskyblue; /* Knappens färg */
+    color: white; /* Textfärg */
+    border: none;
+    border-radius: 5px; /* Rundade hörn */
+    font-size: 16px;
+    cursor: 
 }

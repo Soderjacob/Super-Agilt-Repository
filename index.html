@@ -19,20 +19,21 @@
 
         <div class = "c1">
 
-            <div class="gamecontainer">
-                
-            </div>
             <div id="options-container">
-                <button class="button" id="Word1">Word 1</button>
-                <button class="button" id="Word2"> Word 2</button>
-
-                <input type="text" name="one letter here" id="input"> <!--work in progress-->
-                <button class="Button" onclick="displayValue()">Confirm</button>
-                <div id="output"></div>
+                <h3>Please Select An Option</h3>
+                <div class="buttons-container">
+                    <button class="button" id="Word 1">Word 1</button>
+                    <button class="button" id="Word 2"> Word 2</button>
+                </div>
+            </div>
+            <div id="letter-container" class ="letter-container hide">asd</div>
+            <div id="user-input-section">asd</div>
+            <div class ="playerturn">
+                <button id="myButton">Change player</button>
+                <h3 id="p1">Player1 turn!</h3>
+                <h3 id="p2" hidden >Player2 turn!</h3>
             </div>
 
-            <div id="letter-container" class ="letter-container hide"></div>
-            <div id="user-input-section"></div>
             <canvas id="canvas"></canvas> <!--Canvas for the man-->
             <div id="new-game-container" class = "new-game-popup hide">
                 <div id ="results-text"></div>
@@ -41,12 +42,8 @@
             </div>
         </div>
         
-        <div class ="playerturn">
-        <button id="myButton">Change player</button>
-        <h3 id="p1">Player1 turn!</h3>
-        <h3 id="p2">Player2 turn!</h3>
         
-        </div>
+        
 
 
         <div class = "c2">
@@ -60,8 +57,16 @@
 
          <!-- <button class="Button" id="Confirm-button">Confirm</button> t.ex confirm chosen word -->
         <!--
-         
-        -->
-        <script src="java.JS"></script>
+
+
+         <div class="gamecontainer">
+            <nav class="button-container">
+                <button class="button" id="new-game-button">New Game</button> 
+                <button class="button" id="exit-button">Exit Game</button>
+            </nav>
+        </div>-->
+        
+        <script src="java.JS" defer></script>
+>>>>>>> 43cf9fe4fca83ad376f37653a0902f532af81fec
 </body>
 </html>

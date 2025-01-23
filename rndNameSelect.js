@@ -1,22 +1,22 @@
-import { readFile } from 'fs';
+import fs from 'node:fs';
 
-// code for reading from text file and convert to array
-// and select randomly two names from array and print 
-// them with there length.
+// Function to read the content of a file and return its content as a string
+const readFileLines = filename => fs.readFileSync(filename).toString('UTF8');
+let a = readFileLines('countriesNames.txt');
+const myArray = a.split(" ");
 
-readFile('counterisNames.txt', 'utf8', (err, data) => {
-  if (err) {
-    console.error('Error reading the file: ' + err);
-    return;
-  }
-    const a = data.split(" ");
-let i = Math.floor(Math.random() * a.length);
-let j = Math.floor(Math.random() * a.length);
-  while (j === i) {
-    j = Math.floor(Math.random() * a.length);
-  }
-let FirstName = a[i];
-let SecondName = a[j];
-  console.log(FirstName, FirstName.length);
-  console.log(SecondName, SecondName.length);
-});
+// Function to generate a random name pair from the array
+function  rnd() {
+let i = Math.floor(Math.random() * myArray.length);
+let j = Math.floor(Math.random() * myArray.length);
+ while (j === i) {
+   j = Math.floor(Math.random() * myArray.length);
+ }
+let FirstName = myArray[i];
+let SecondName = myArray[j];
+ return {FirstName,SecondName};
+};
+
+// Call the function to get a random name pair from the array
+let randomName = rnd();
+console.log(randomName.FirstName,randomName.SecondName);
