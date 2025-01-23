@@ -126,7 +126,7 @@ const initializer = () => {
         button.addEventListener("click", () => {
           let charArray = chosenWord.split("");
           let dashes = document.getElementsByClassName("dashes");
-          //if array contains clciked value replace the matched dash with letter else dram on canvas
+          //if array contains clicked value replace the matched dash with letter else dram on canvas
           if (charArray.includes(button.innerText)) {
             charArray.forEach((char, index) => {
               //if character in array is same as clicked button
@@ -135,7 +135,7 @@ const initializer = () => {
                 dashes[index].innerText = char;
                 //increment counter
                 winCount += 1;
-                //if winCount equals word lenfth
+                //if winCount equals word length
                 if (winCount == charArray.length) {
                   resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                   //block all buttons
@@ -172,7 +172,7 @@ initialDrawing();
 };
 
 const canvasCreator =() => {
-    let context = canvas.getContent("2d");
+    let context = canvas.getContext("2d");
     context.beginPath();
     context.strokeStyle = "#000";
     context.lineWidth = 2;
