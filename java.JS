@@ -10,7 +10,7 @@ const p2 = document.getElementById("p2");
 const newGameButton = document.getElementById("new-game-button");
 
 
-
+/* Caspars ursprungliga
 myButton.addEventListener("click", event =>{
     while(true){
     if(p1.style.display === "none"){
@@ -26,6 +26,18 @@ myButton.addEventListener("click", event =>{
 }
 
 })
+*/
+
+/* Shifts between player 1 and player 2*/
+function toggleDisplay() {
+    if (p1.style.display === "none") {
+      p1.style.display = "block";
+      p2.style.display = "none";
+    } else {
+      p1.style.display = "none";
+      p2.style.display = "block";
+    }
+  }
 
 let options = {
     fruits: [
@@ -124,6 +136,7 @@ const initializer = () => {
         button.innerText = String.fromCharCode(i);
         //character button click
         button.addEventListener("click", () => {
+            toggleDisplay();
           let charArray = chosenWord.split("");
           let dashes = document.getElementsByClassName("dashes");
           //if array contains clciked value replace the matched dash with letter else dram on canvas
