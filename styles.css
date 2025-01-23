@@ -212,6 +212,7 @@ color: #fe5152;
 .modal.open {
     opacity: 1;
     z-index: 999;
+    
 }
 
 .modal-inner {
@@ -228,5 +229,5 @@ color: #fe5152;
 
 .modal-inner p {
     line-height: 24px;
-    margin: 10px 0;
+    margin: 10px ;
 }
