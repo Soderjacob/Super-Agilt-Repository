@@ -31,9 +31,7 @@ word2.addEventListener('click',function(){
 });
 
 //
-const myButton = document.getElementById("myButton")
-const p1 = document.getElementById("p1")
-const p2 = document.getElementById("p2")
+
 
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
