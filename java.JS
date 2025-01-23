@@ -12,20 +12,26 @@ const exitButton = document.getElementById("exit-button");
 const openBtn = document.getElementById("openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
+const remodal = document.getElementById("reloadModal");
 
 openBtn.addEventListener("click",() =>{
     modal.classList.add("open");
-    //Spel efter klickat yes ska refresha sidan
+    //Opens pop up window
     
 })
 
 closeBtn.addEventListener("click",() =>{
     modal.classList.remove("open");
+    //closes pop up window
+})
+remodal.addEventListener("click" ,() =>{
+location.reload()
 })
 
 
 exitButton.addEventListener("click", event => {
 //Exit button efter spel avslutas ska refresha sidan
+location.reload();
 })
 
 
