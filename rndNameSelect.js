@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 // Function to read the content of a file and return its content as a string
 const readFileLines = filename => fs.readFileSync(filename).toString('UTF8');
-let a = readFileLines('counterisNames.txt');
+let a = readFileLines('countriesNames.txt');
 const myArray = a.split(" ");
 
 // Function to generate a random name pair from the array
