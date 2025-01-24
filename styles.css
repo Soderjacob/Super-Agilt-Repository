@@ -231,3 +231,8 @@ color: #fe5152;
     line-height: 24px;
     margin: 10px ;
 }
+
+.dashes {
+   display: inline-block;
+   margin: 0 5px; 
+}
