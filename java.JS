@@ -14,6 +14,12 @@ const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
 const remodal = document.getElementById("reloadModal");
 
+const jsConfetti = new JSConfetti()
+function flyingConfetti(){
+  jsConfetti.addConfetti();
+}
+
+
 openBtn.addEventListener("click",() =>{
     modal.classList.add("open");
     //Opens pop up window
@@ -177,6 +183,7 @@ const initializer = () => {
                 if (winCount == charArray.length) {
                   resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                   //block all buttons
+                  flyingConfetti();
                   blocker();
                 }
               }
@@ -189,6 +196,7 @@ const initializer = () => {
             //Count==6 because head,body,left arm, right arm,left leg,right leg
             if (count == 6) {
               resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+            
               blocker();
             }
           }
