@@ -11,9 +11,16 @@ body {
 
 
 .button{
-    transition-duration: 0.5s;
-    background-color: rgb(161, 218, 238);
-    padding: 20px;
+    padding: 0.6em 1.2em;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 10em;
+    display: inline-block;
+    margin: 0 auto;
 }
 .button:hover{
     background-color: rgb(125, 190, 213);
