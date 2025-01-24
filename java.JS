@@ -4,11 +4,9 @@ const userInputSection = document.getElementById("user-input-section");
 const newGameContainer = document.getElementById("new-game-container");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
-const myButton = document.getElementById("myButton");
 const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
 const newGameButton = document.getElementById("new-game-button");
-const exitButton = document.getElementById("exit-button");
 const openBtn = document.getElementById("openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
@@ -34,11 +32,6 @@ remodal.addEventListener("click" ,() =>{
 location.reload()
 })
 
-
-exitButton.addEventListener("click", event => {
-//Exit button efter spel avslutas ska refresha sidan
-location.reload();
-})
 
 
 /* Caspars ursprungliga
