@@ -32,26 +32,6 @@ remodal.addEventListener("click" ,() =>{
 location.reload()
 })
 
-
-
-/* Caspars ursprungliga
-myButton.addEventListener("click", event =>{
-    while(true){
-    if(p1.style.display === "none"){
-      p1.style.display = "block";
-      p2.style.display = "none";
-     
-    }
-    else {
-       p1.style.display = "none";
-        p2.style.display = "block";
-    }
-    break;
-}
-
-})
-*/
-
 /* Shifts between player 1 and player 2*/
 function toggleDisplay() {
     if (p1.style.display === "none") {
@@ -115,7 +95,7 @@ const displayOptions = () => {
   //Word Generator
 const generateWord = (optionValue) => {
     let optionsButtons = document.querySelectorAll(".options");
-    //If optionValur matches the button innerText then highlight the button
+    //If optionValue matches the button innerText then highlight the button
     optionsButtons.forEach((button) => {
       if (button.innerText.toLowerCase() === optionValue) {
         button.classList.add("active");
@@ -161,6 +141,7 @@ const initializer = () => {
         //character button click
         button.addEventListener("click", () => {
             toggleDisplay();
+            // Changes player turn on each input
           let charArray = chosenWord.split("");
           let dashes = document.getElementsByClassName("dashes");
           //if array contains clicked value replace the matched dash with letter else dram on canvas
@@ -177,7 +158,9 @@ const initializer = () => {
                   resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
                   //block all buttons
                   flyingConfetti();
+                  // Celebration for victory!
                   blocker();
+                  // Game ended screen
                 }
               }
             });
@@ -191,17 +174,15 @@ const initializer = () => {
               resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
             
               blocker();
+              // Game ended screen
             }
           }
           //disable clicked button
           button.disabled = true;
         });
         letterContainer.append(button);
+        // Hides input
       }
-    
-
-
-//Canvas This code will be under the buttons...
 
 displayOptions();
 //Call to canvasCreator (clear previous and creating initial)
